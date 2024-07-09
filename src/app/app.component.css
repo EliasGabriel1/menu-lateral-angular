@@ -1,0 +1,21 @@
+app-sidebar {
+  max-width: 296px;
+  width: 100%;
+  position: sticky;
+  left: 0vw;
+  top: 0vw;
+  height: calc(100% - 2vw);
+  overflow-x: hidden;
+  user-select: none;
+  border-left: 4px solid var(--border-color);
+  height: 100vh;
+  scrollbar-width: thin;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.content {
+  margin-right: 10px;
+}

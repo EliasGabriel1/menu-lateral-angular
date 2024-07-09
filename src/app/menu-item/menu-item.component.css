@@ -1,0 +1,65 @@
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label + ul {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label + ul {
+  display: block;
+}
+
+label{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+
+li label{
+  padding: 8px 16px 8px 0;
+  color: var(--secondary-color);
+}
+
+.menu-subitem{
+  background-color: var(--subitem-background);
+}
+
+.menu-subitem label{
+ color: var(--subitem-text);
+}
+
+.menu-subitem .menu-subitem{
+  background-color: unset;
+}
+
+input[type="checkbox"] + label svg{
+  transition: 700ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+input[type="checkbox"]:checked + label svg{
+  transform: rotate(180deg);
+  transition: 700ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+a label{
+  cursor: pointer;
+}
+
+a:hover label{
+  color: var(--border-color);
+}

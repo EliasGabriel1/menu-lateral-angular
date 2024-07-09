@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-color: #465eff;
+  --secondary-color: rgba(0, 0, 0, 0.85);
+  --subitem-background: rgba(0, 0, 0, 0.04);
+  --subitem-text: rgba(0, 0, 0, 0.56);
+  --border-color: #465eff;
+  --hover-color: rgba(70, 94, 255, 1);
+}
+
+body{
+  margin: 0;
+}
